@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1>Branchs</h1>
+    <p>
+    São ramificações do projeto, o qual permite vários desenvolvedores, trabalharem em diferentes funcionalidades, sem bugar a versão estável.
+    </p>
+  <h3>Principais branchs</h3>
+  <p>
+    Branch main -> que é a branch principal, ou seja, a branch estável da aplicação. Versão que é disponibilizada aos clientes.
+    <br>
+    Branch developer -> é branch utilizada para testers. Os quai vão testar as novaas funcionalidades, correções de bugs, etc.
+    </p>
+    <h3>Outras branchs</h3>
+    <p>
+    Para cada nova funcionalidade ou correção de bugs é criada uma nova branch
+    </p>
+   <h3>Padrões para criar nomes de branchs</h3>
+   <p>
+    !IMPORTANTE! Nomes de branchs não tem acento e nem Ç
+    <br>
+    Para correção de bugs: fix_identificacao_do_bug
+    <br>
+    Exemplo: fix_botao_de_login, fix_cor_do_cabecaho
+    <br>
+    Para novas funcionalidades:
+    <br>
+    feat_identificacao_da_nova_funcionalidade
+    <br>
+    Exemplo: feat_integracao_com_google, feat_nova_tela_de_contato
+    <br>
+    Para atualizar documentação: doc_identificacao_da_alteracao
+    <br>
+    Exemplo: doc_adicionada_nova_imagem
+    <br>
+    Para criação/alteração de tarefas que nao interfere no código:
+    <br>
+    chore_identificacao_da_modificacao
+    <br>
+    Exemplo: chore_atualizado_a_versao_do_banco
+    </p>
+    <h3>Comandos para trabalhar com branchs</h3>
+    <h3>Criação de novas branchs</h3>
+    <p>
+    git checkout -b nome_da_nova_branch
+    Exemplo: git checkout -b fix_botao_da_tela_login
+    Obs: O ideal é sempre criar as branchs a partir da main.
+    </p>
+    <h3>Listar as branchs existentes</h3>
+    <p>
+    git branch list
+    </p>
+    <h3>Trocar de branch</h3>
+    <p>
+    git switch nome_da_branch_que_deseja_entrar
+    <br>
+    Exemplo: git switch fux_botao_da_tela_de_login
+    Exemplo 2: git switch main
+    </p>
+    <h3> Excluir uma branch</h3>
+    <p>
+    git branch -D nome_da_branch_que_deseja_excluir
+    Exemplo: git branch -D fix_botao_da_tela_login 
+ </p>
+</body>
+</html>
